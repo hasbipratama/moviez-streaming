@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moviezstreaming/pages/Home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Column(
-          children: [Text('test')],
-        ),
-      ),
+      theme: ThemeData(fontFamily: 'Avenir'),
+      routes: {
+        '/': (context) => Home(),
+      },
     );
   }
 }
