@@ -9,10 +9,10 @@ class Home extends StatelessWidget {
           Text(
             'Moviez',
             style: TextStyle(
-                color: Color(0xff0D0846),
-                fontSize: 28,
-                fontFamily: 'AvenirLTStd',
-                fontWeight: FontWeight.bold),
+              color: Color(0xff0D0846),
+              fontSize: 28,
+              fontFamily: 'AvenirLTStd',
+            ),
           ),
         ],
       ),
