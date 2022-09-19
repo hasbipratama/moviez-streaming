@@ -12,7 +12,6 @@ class Home extends StatelessWidget {
             style: TextStyle(
               color: Color(0xff0D0846),
               fontSize: 28,
-              fontFamily: 'Aveni',
             ),
           ),
         ],
