@@ -16,54 +16,49 @@ class _CardmovieState extends State<Cardmovie> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(right: 24),
-      child: Column(
-        children: [
-          Container(
-            width: 300,
-            height: 400,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      child: Container(
+        width: 300,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                widget.Card_model.Imagecard,
+                width: 300,
+                height: 207,
+                fit: BoxFit.cover,
+              ),
+            ),
+            SizedBox(height: 20),
+            Row(
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Image.asset(
-                    widget.Card_model.Imagecard,
-                    width: 300,
-                    height: 207,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                SizedBox(height: 20),
-                Row(
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          widget.Card_model.Namemovie,
-                          style: Tittle,
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          widget.Card_model.Genremovie,
-                          style: SubTittle,
-                        )
-                      ],
+                    Text(
+                      widget.Card_model.Namemovie,
+                      style: Tittle,
                     ),
-                    Spacer(),
-                    Image.asset(
-                      widget.Card_model.Starmovie,
-                      width: 98,
-                      height: 18,
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      widget.Card_model.Genremovie,
+                      style: SubTittle,
                     )
                   ],
                 ),
+                Spacer(),
+                Image.asset(
+                  widget.Card_model.Starmovie,
+                  width: 98,
+                  height: 18,
+                )
               ],
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
