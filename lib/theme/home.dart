@@ -18,3 +18,9 @@ TextStyle From = TextStyle(
     fontSize: 24,
     fontFamily: 'AvenirLTStd',
     fontWeight: FontWeight.w800);
+
+TextStyle Button = TextStyle(
+    color: Color(0xffFFFFFF),
+    fontSize: 16,
+    fontFamily: 'AvenirLTStd',
+    fontWeight: FontWeight.w300);
